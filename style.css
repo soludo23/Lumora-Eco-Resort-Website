@@ -1,0 +1,474 @@
+/*=====================NAV=====================*/
+
+/*===============HEADER & NAVBAR===============*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        font-family: sans-serif, poppins;
+    }
+.eco-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: green;
+}
+.eco-header h3{
+    color: white;
+}
+.navbar{
+    display: flex;
+    gap: 30px;
+}
+.navbar a,.nav-links a{
+    text-decoration: none;
+}
+.eco-menu{
+    display: none;
+}
+.eco-menu summary{
+    list-style: none;
+    cursor: pointer;
+}
+.hamburger span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: black;
+}
+@media(max-width: 768px){
+    .navbar{
+        display: none;
+    }
+    .eco-menu{
+        display: block;
+        position: relative;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 75px;
+        width: 250px;
+        position: absolute;
+        top: calc(100% 20px);
+        right: -16px;
+        background-color: green;
+    }
+}
+
+/*================HOME CONTENT=================*/
+
+/*===================HERO======================*/
+
+.home-hero{
+    width: 100%;
+    height: 100vh;
+    background-image:url("/images/home2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+.home-hero-content{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.button{
+    padding: 15px 25px;
+    margin-top: 25px;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+}
+@media(max-width: 480px){
+    .home-hero-content{
+        text-align: left;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+/*========A DIFFERENT KIND OF LUXURY===========*/
+
+.luxury-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    padding: 30px;
+}
+.luxury{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.luxury1{
+    border: 0 solid transparent;
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+
+/*================STAY YOUR WAY================*/
+
+.stay-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.h2{
+    margin-top: 50px;
+    text-align: center;
+}
+.card{
+    overflow: hidden;
+    margin-top: 25px;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+.card h3,.card p{
+    margin: 30px;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/*=============BEYOND THE ROOM=================*/
+
+.experience-preview{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 30px;
+}
+.experience-card{
+    margin-top: 25px;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+.experience-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.experience-card h3{
+    margin: 50px;
+}
+
+/*=========YOUR QUIET ESCAPE IS WAITING=======*/
+
+.footer-preview{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    background-color: darkgreen;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+#button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+}
+
+/*====================FOOTER===================*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+}
+a{
+    color: white;
+}
+
+/*===================STAY======================*/
+
+/*================STAY HERO====================*/
+
+.stay-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/stay6.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.stay-hero-overlay{
+    text-align: center;
+    font-family: sans-serif, poppins;
+    font-size: 25px;
+    color: white;
+}
+
+/*================ACCOMMODATION================*/
+
+.accommodation-title{
+    text-align: center;
+    margin-top: 60px;
+}
+.accommodation-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px;
+    gap: 50px;
+}
+.accommodation-cards{
+    overflow: hidden;
+    text-align: center;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0  16px 32px lightgray;
+}
+.accommodation-cards img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.accommodation-cards h3,.accommodation-cards p{
+    margin:30px;
+}
+
+/*=============COMPARISON SECTION==============*/
+
+.table-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+table{
+    text-align: center;
+    border: 0 solid transparent;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+    margin-top: 50px;
+}
+th{
+    width: 100px;
+    height: 50px;
+}
+td{
+    width: 100px;
+    height: 50px;
+}
+
+/*==============EXPERIENCE PAGE================*/
+
+/*================HERO SECTION=================*/
+
+.experience-hero{
+    background-image: url("/images/experience5.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience-hero-content{
+    color: wheat;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*=======EARLY HOURS OF THE DAY(MORNING)=======*/
+
+.experiences{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.morning-experiences{
+    overflow: hidden;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    margin-top: 75px;
+    text-align: center;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+            
+.morning-experiences img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.morning-experiences  h2,.morning-experiences  h3,.morning-experiences  p{
+    margin: 40px;
+}
+
+/*=============MID-DAY(AFTERNOON)==============*/
+
+.afternoon-experiences{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.afternoon-experiences-card{
+    overflow: hidden;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    margin-top: 75px;
+    text-align: center;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+            
+.afternoon-experiences-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.afternoon-experiences-card  h2,.afternoon-experiences-card  h3,.afternoon-experiences-card  p{
+    margin: 40px;
+}
+
+/*===========POST MID-DAY(AFTERNOON)===========*/
+
+.evening-experience{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.evening-experiences{
+    overflow: hidden;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0 16px 32px lightgray;
+}
+            
+.evening-experiences img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.evening-experiences  h2,.evening-experiences  h3,.evening-experiences  p{
+    margin: 40px;
+}
+
+/*============ CONTACT & BOOKING ==============*/
+
+/*=================HERO SECTION================*/
+
+.contact-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/contact1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.contact-hero-content{
+    color: white;
+    font-size: 25px;
+}
+.back{
+    background-color: #FAF9F6;
+}
+@media(max-width: 480px){
+    .hero{
+        flex-direction: column;
+    }
+}
+
+.form-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    gap: 50px;
+}
+.booking-form{
+    text-align: center;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0  16px 32px lightgray;
+    margin-bottom: 50px;
+}
+.contact-section{
+    text-align: center;
+    border: 0 solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: inset 0 4px 8px gray, 0 4px 8px gray, 0  16px 32px lightgray;
+    margin-bottom: 50px;
+}
+.contact-section h2,.contact-section h3, .contact-section p{
+    margin-top: 50px;
+}
+select{
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+            
+input{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: inset 0 4px 8px gray;
+    color: blue;
+    margin: 10px;
+    text-align: center;
+}
+textarea{
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    color: blue;
+}
+.accommodate{
+    color: blue;
+}
+button{
+    padding: 15px;
+    border-radius: 50px;
+    margin: 30px;
+    background-color: blue;
+    color: white;
+    box-shadow: inset 0 4px 8px gray;
+}
+@media(max-width: 768px){
+    .form-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
